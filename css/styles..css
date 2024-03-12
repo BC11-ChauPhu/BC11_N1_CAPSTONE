@@ -582,8 +582,7 @@ body .eyeCatcher {
     position: relative;
 }
 
-
-.categories-img::before {
+.categories-img::after {
     content: "";
     display: block;
     height: 40%;
@@ -594,7 +593,7 @@ body .eyeCatcher {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
 }
 
-.categories-img:hover {
+.categories-img img:hover {
     opacity: 0.85;
     transition: all 0.4s;
 }
@@ -683,4 +682,25 @@ body .eyeCatcher {
 
 .service-title .info a:hover {
     color: #ff6600 !important;
+}
+
+/* MOVE TO TOP */
+
+#movetop {
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 99;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ff6600;
+    padding: 0;
+    border-radius: 35px;
+    transition: .3s ease-in-out;
 }
