@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N1_Diner</title>
 
+    <link rel="shortcut icon" href="./img/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg" type="image/x-icon">
+
     <!-- GOOGLE FONT -->
     <link href="//fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/cde141b017.js" crossorigin="anonymous"></script>
 
     <!-- BOOTSTRAP 4.6 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -27,12 +32,420 @@
 
 <body>
 
+    <section class="overlay">
+        <button type="button" class="overlay-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <nav class="overlay-menu">
+            <ul class="primary-menu">
+                <li class="overlay-menu-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">Services</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">Blog Posts</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">404 page</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">Elements</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="overlay-menu-item">
+                    <a href="#">Landing page</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg m-0 ">
+                <div>
+                    <h1>
+                        <a class="navbar-brand" href="#">Diner</a>
+                    </h1>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="search-bar form-inline ">
+                        <input class="dark-theme form-control m-0" type="search" placeholder="Search here.."
+                            aria-label="Search">
+                        <span class="fa fa-search search__icon"></span>
+                    </form>
+
+                    <div class="mode-container">
+                        <svg class="active sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8m0 2a6 6 0 1 0 0-12a6 6 0 0 0 0 12M11 0h2v4.062a8.079 8.079 0 0 0-2 0zM7.094 5.68L4.222 2.808L2.808 4.222L5.68 7.094A8.048 8.048 0 0 1 7.094 5.68M4.062 11H0v2h4.062a8.079 8.079 0 0 1 0-2m1.618 5.906l-2.872 2.872l1.414 1.414l2.872-2.872a8.048 8.048 0 0 1-1.414-1.414M11 19.938V24h2v-4.062a8.069 8.069 0 0 1-2 0m5.906-1.618l2.872 2.872l1.414-1.414l-2.872-2.872a8.048 8.048 0 0 1-1.414 1.414M19.938 13H24v-2h-4.062a8.069 8.069 0 0 1 0 2M18.32 7.094l2.872-2.872l-1.414-1.414l-2.872 2.872c.528.41 1.003.886 1.414 1.414"
+                                clip-rule="evenodd">
+                        </svg>
+                        <svg class="hide moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 256 256">
+                            <path fill="currentColor"
+                                d="M236.37 139.4a12 12 0 0 0-12-3A84.07 84.07 0 0 1 119.6 31.59a12 12 0 0 0-15-15a108.86 108.86 0 0 0-54.91 38.48A108 108 0 0 0 136 228a107.09 107.09 0 0 0 64.93-21.69a108.86 108.86 0 0 0 38.44-54.94a12 12 0 0 0-3-11.97m-49.88 47.74A84 84 0 0 1 68.86 69.51a84.93 84.93 0 0 1 23.41-21.22Q92 52.13 92 56a108.12 108.12 0 0 0 108 108q3.87 0 7.71-.27a84.79 84.79 0 0 1-21.22 23.41" />
+                        </svg>
+                    </div>
+
+                    <div class="mobile-nav-button">
+                        <button id="trigger-overlay" type="button"><i class="fa fa-bars"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <div class="container banner-container">
+
+                <div class="banner-info">
+                    <h3 class="mb-4">The Only Thing We Love More Than Food Is You!</h3>
+                    <p class="pr-lg-5 mt-md-4 mt-3">
+                        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed
+                        consequuntur illum facere.
+                    </p>
+                    <a class="btn btn-outline-light mt-sm-5 mt-4 mr-2" href="#">
+                        Read More &nbsp;
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="dark-theme aboutUs py-5">
+        <div class="container py-md-5">
+
+            <div class="row">
+                <div class="col-lg-5 aboutUs-left">
+                    <div class="aboutUs-title">
+                        <h6>About Us</h6>
+                        <h3 class="mb-4">We found our creative space that is open for you.</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 pl-lg-5 mt-lg-0 mt-3 aboutUs-right">
+                    <p class="m-0">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor
+                        sit.
+                    </p>
+                    <p class="mt-3">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EYECATCHER -->
+    <section class="dark-theme eyeCatcher">
+        <div class="container-fluid px-lg-0">
+
+            <div class="row align-items-center no-gutters">
+
+                <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+                    <div class="eyeCatcher-banner"></div>
+                </div>
+
+                <div class=" col-lg-6 px-lg-4 py-lg-3 py-4">
+                    <div class="eyeCatcher-info p-md-5 p-3">
+                        <h6>More than 3000 Restaurants</h6>
+                        <h3>Book a table easily at the best price</h3>
+                        <p class="my-3">
+                            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet
+                            mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+                        </p>
+                        <div class="eyeCatcher-subscribe mt-5">
+
+                            <div class="subscribe-block">
+                                <div class="subscribe-icon mb-4">
+                                    <span class="fa fa-thumbs-up"></span>
+                                </div>
+                                <a href="#">Best Deals</a>
+                                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                            </div>
+
+                            <div class="subscribe-block">
+                                <div class="subscribe-icon mb-4">
+                                    <span class="fa fa-cutlery"></span>
+                                </div>
+                                <a href="#">Best Food</a>
+                                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="dark-theme categories py-5">
+        <div class="container py-md-5 py-2">
+
+            <div class="categories-title text-center">
+                <h6>What's New</h6>
+                <h3>Popular Categories</h3>
+            </div>
+
+            <div class="categories-menu row justify-content-center">
+                <div class="categories-item col-lg-4 col-6 mt-4 pt-lg-2">
+                    <div class="categories-img">
+                        <a href="#">
+                            <img src="./img/g1.jpg" class="img img-fluid">
+                        </a>
+                    </div>
+                    <div class="categories-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Vegetarian</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1">
+                            <span>$350</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mt-4 pt-lg-2">
+                    <div class="categories-img">
+                        <a href="#">
+                            <img src="./img/g2.jpg" class="img img-fluid">
+                        </a>
+                    </div>
+                    <div class="categories-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Drinks</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1">
+                            <span>$550</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mt-4 pt-lg-2">
+                    <div class="categories-img">
+                        <a href="#">
+                            <img src="./img/g3.jpg" class="img img-fluid">
+                        </a>
+                    </div>
+                    <div class="categories-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Lunch</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1">
+                            <span>$650</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mt-4 pt-lg-2">
+                    <div class="categories-img">
+                        <a href="#">
+                            <img src="./img/g4.jpg" class="img img-fluid">
+                        </a>
+                    </div>
+                    <div class="categories-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Bakery</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1">
+                            <span>$550</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mt-4 pt-lg-2">
+                    <div class="categories-img">
+                        <a href="#">
+                            <img src="./img/g5.jpg" class="img img-fluid">
+                        </a>
+                    </div>
+                    <div class="categories-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Desserts</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1">
+                            <span>$750</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mt-4 pt-lg-2">
+                    <div class="categories-img">
+                        <a href="#">
+                            <img src="./img/g6.jpg" class="img img-fluid">
+                        </a>
+                    </div>
+                    <div class="categories-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Pizza</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1">
+                            <span>$850</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="dark-theme services py-5">
+        <div class="container py-lg-5 py-md-3 py-3">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item">
+                        <div class="service-title">
+                            <div class="icon">
+                                <span class="fa fa-users"></span>
+                            </div>
+                            <div class="info">
+                                <p>01</p>
+                                <h4>
+                                    <a href="#">Soup</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+                    <div class="service-item">
+                        <div class="service-title">
+                            <div class="icon">
+                                <span class="fa fa-shield"></span>
+                            </div>
+                            <div class="info">
+                                <p>02</p>
+                                <h4>
+                                    <a href="#">Drinks</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+                    <div class="service-item">
+                        <div class="service-title">
+                            <div class="icon">
+                                <span class="fa fa-thermometer-full"></span>
+                            </div>
+                            <div class="info">
+                                <p>03</p>
+                                <h4>
+                                    <a href="#">Pizza</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="service-item">
+                        <div class="service-title">
+                            <div class="icon">
+                                <span class="fa fa-american-sign-language-interpreting"></span>
+                            </div>
+                            <div class="info">
+                                <p>04</p>
+                                <h4>
+                                    <a href="#">Breakfast</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="service-item">
+                        <div class="service-title">
+                            <div class="icon">
+                                <span class="fa fa-paint-brush"></span>
+                            </div>
+                            <div class="info">
+                                <p>05</p>
+                                <h4>
+                                    <a href="#">Lunch</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="service-item">
+                        <div class="service-title">
+                            <div class="icon">
+                                <span class="fa fa-eraser"></span>
+                            </div>
+                            <div class="info">
+                                <p>06</p>
+                                <h4>
+                                    <a href="#">Dinner</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <button id="movetop" title="Go to top" style="display: block;">
+        <span class="fa fa-angle-up"></span>
+    </button>
+
+
+
+
+
+
+
 
     <!-- JQUERY -->
     <script src="./js/jquery-3.7.1.min.js"></script>
 
     <!-- BOOTSTRAP 4.6 -->
-    <script src="./js/bootstrap.bundle.min.js"></script>     
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
     <!-- OWL CAROUSEL -->
     <script src="./js/owl.carousel.min.js"></script>
@@ -43,4 +456,5 @@
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 </body>
+
 </html>
