@@ -33,3 +33,17 @@ $('.overlay-close').click(function (){
 })
 
 // HÀM BACK TO TOP
+
+window.onscroll = () => {
+    if (document.documentElement.scrollTop < 100) {
+        getElement('#movetop').style.display = 'none'
+    }
+    else {
+        getElement('#movetop').style.display = 'block'
+    }
+}
+getElement('#movetop').addEventListener('click', () => {
+    $('html, body').animate({scrollTop: 0}, 600)
+})
+
+console.log(getElement('#movetop'))
